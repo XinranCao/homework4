@@ -172,6 +172,7 @@ footer{
   .pricing {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .card {
@@ -181,6 +182,7 @@ footer{
   .gallery {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
   }
 
   .gallery img {
