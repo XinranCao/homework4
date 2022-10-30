@@ -1,7 +1,3 @@
-html {
-  font-family: 'Poppins', sans-serif;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -13,25 +9,8 @@ main {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: #fff;
   border-bottom: 3px solid #50C7C7;
-}
-
-header img {
-  width: 100%;
-  height: auto;
-}
-
-header #logo {
-  animation: fades 3s linear forwards;
-}
-
-@keyframes fades {
-  from { opacity: 0; }
-  to { opacity: 1; }
 }
 
 h1 {
@@ -78,8 +57,6 @@ a.skip:focus{
 }
 
 .nav_links {
-  display: flex;
-  flex-direction: column;
   margin-bottom: 20px;
 }
 
@@ -95,8 +72,6 @@ a.skip:focus{
 }
 
 .pricing{
-  display: flex;
-  flex-direction: column;
   min-height: 475px;
 }
 
@@ -106,7 +81,7 @@ a.skip:focus{
   overflow: hidden;
   border-radius: 30px 30px 0 0;
   padding: 0 0 20px 0;
-  /* width: calc(100% - 24px); */
+  width: 100%;
 }
 
 .card > ul{
@@ -138,8 +113,6 @@ a.skip:focus{
 }
 
 .gallery {
-  display: flex;
-  flex-direction: column;
   padding-bottom: 20px;
 }
 
@@ -153,46 +126,4 @@ footer{
   color: white;
   padding: 30px;
   text-align: center;
-}
-
-@media all and (min-width: 700px){
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  header img {
-    width: 400px;
-    height: auto;
-  }
-
-  .nav_links {
-    flex-direction: row;
-  }
-
-  .pricing {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .card {
-    width: 300px;
-  }
-
-  .gallery {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .gallery img {
-    width: 300px;
-  }
-
-}
-
-@media (prefers-reduced-motion){
-  header #logo {
-    animation: none;
-  }
 }
